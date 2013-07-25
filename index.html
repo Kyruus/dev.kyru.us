@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+  <!-- Basic Page Needs
+ ================================================== -->
+  <meta charset="utf-8" />
+  <title>Kyruus Dev Blog &mdash; Home</title>
+  <meta name="description" content="Kyruus Dev Blog &mdash;  ">
+  <meta name="author" content="Dave Gandy">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- CSS
+ ================================================== -->
+
+  <link rel="stylesheet" href="/assets/css/pygments.css">
+  <link rel="stylesheet" href="/assets/css/site.min.css" media="screen">
+
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+  <script type="text/javascript" src="//use.typekit.net/knb2ekr.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31344009-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div class="wrap"> <!-- necessary for sticky footer. wrap all content except footer -->
+  <!--<div class="navbar navbar-static-top hidden-print">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><i class="icon-code icon-large padding-right"></i>Kyruus Dev Blog</a>
+      <ul class="nav pull-right hidden-phone">
+        <li><a href="/">Home</a></li>
+        <li><a href="/articles">Articles</a></li>
+        <li><a href="http://twitter.com/kyruus">@kyruus</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+-->
+  <div class="navbar navbar-static-top hidden-print">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><i class="icon-code icon-large padding-right"></i>Kyruus Dev Blog</a>
+      <ul class="nav pull-right hidden-phone">
+        <li><a href="/">Home</a></li>
+        <li><a href="/articles">Articles</a></li>
+        <li><a href="http://twitter.com/kyruus">@kyruus</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+    
+<section class="row">
+  <div class="span10 offset1">
+    <div class="post">
+      <h1><a href="/2013/06/04/upcoming-changes-in-font-awesome-3.2-and-4.0/">Upcoming Changes in Font Awesome 3.2 and 4.0</a></h1>
+      <p class="date"><a href="http://twitter.com/davegandy">@davegandy</a> wrote this on 04 Jun 2013</p>
+      <p>Many changes are in the works for future versions of Font Awesome. Already well underway, version 3.2 adds a host of new brand icons and creates a better build process, while 4.0 will break backward compatibility to bring Font Awesome in line with best practices for icon fonts that have developed over the past year.</p>
+
+<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnop</p>
+
+<h3>Font Awesome 3.2</h3>
+
+<p>Font Awesome 3.2 is primarily a date-driven release, as I&#39;m trying to keep smaller and more regular updates the norm. The release date for 3.2 is expected on Wednesday, June 12, so watch for it!</p>
+
+<p>I&#39;m now using GitHub&#39;s milestone functionality to track issues for new releases, so it&#39;s easy to see progress on the <a href="https://github.com/FortAwesome/Font-Awesome/issues?milestone=3&amp;state=open">Font Awesome 3.2 milestone</a>. As 3.2 is a date-driven release, I likely won&#39;t get to all the open issues in 3.2, but will push them into 4.0. I am trying to get all the open bugs addressed, however.</p>
+
+<p>So far in 3.2, I have so far added 48 new icons. I&#39;ve been going down the list of most commented icon requests to get a sense of which icons are in highest demand, with a special focus on international appeal. 8 of the world&#39;s most popular currencies have been added and over 20 new brand icons. And I&#39;m not done yet.</p>
+
+<p>I&#39;ve heard loud and clear that folks really want SCSS and SASS support, so we&#39;ll make sure that&#39;s in there and in good shape for future maintainability.</p>
+
+<p>And a big thank you to <a href="https://twitter.com/robmadole">@robmadole</a> for helping out so much to create a fantastic build system for Font Awesome. All CSS, LESS, and documentation generation is driven off a master icons.yml file. This means no more silly errors in <a href="https://github.com/FortAwesome/Font-Awesome/issues/1067">updating version in documentation</a>, <a href="https://github.com/FortAwesome/Font-Awesome/issues/1151">missing icons in documentation</a>, etc. Oh, and <a href="http://jekyllrb.com">Jekyll</a> absolutely kicks ass for static website generation.</p>
+
+<h3>Font Awesome 4.0</h3>
+
+<p>Since Font Awesome 1.0 was released over a year ago, we&#39;ve learned some things about the best way to serve icon fonts. Version 4.0 will have a prefix class (likely <code>fa</code> or <code>fontawesome</code>) along with the name of the icon (<code>fa-heart</code> or <code>fontawesome-heart</code>). As the CSS will no longer contain matching selectors, CSS rendering time will speed up quite a bit. We&#39;ll also be de-emphasizing IE7 support (though it will stay at the basic level since the cost is minimal). And we&#39;ll add <a href="http://foundation.zurb.com">Foundation</a> support and dig into how feasible GSUB support will be.</p>
+
+<p>Want to see how things are progressing or get details on the issues? I&#39;m keeping track of the release in <a href="https://github.com/FortAwesome/Font-Awesome/issues?milestone=2&amp;state=open">Font Awesome&#39;s 4.0 milestone</a>.</p>
+
+    </div>
+  </div>
+</section>
+
+<section class="row">
+  <div class="span10 offset1">
+    <div class="post">
+      <h1><a href="/2013/05/20/get-the-most-out-font-awesome-and-bootstrapcdn/">Get the Most out of Font Awesome and BootstrapCDN</a></h1>
+      <p class="date"><a href="http://twitter.com/davegandy">@davegandy</a> wrote this on 20 May 2013</p>
+      <p>The <a href="http://fontawesome.io/get-started/#bootstrapcdn">easiest way to get started</a> with Font Awesome is to use <a href="http://www.bootstrapcdn.com/#tab_fontawesome">BootstrapCDN</a>. With a single line of code, you can get all associated Font Awesome CSS and font files served up. The content is even gzipped coming from Bootstrap CDN:</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<p>This is a fantastic way to get up and running with Font Awesome for the first time, as BootstrapCDN also takes care of serving up font files with all the <a href="http://stackoverflow.com/questions/2871655/proper-mime-type-for-fonts#answer-10864297">proper MIME types</a>.</p>
+
+<h3>Customizing Font Awesome</h3>
+
+<p>This is all well and good, but what about folks who want to customize Font Awesome? Turns out you can serve just the fonts directly from BootstrapCDN from your own customized version of Font Awesome. After <a href="http://fontawesome.io/assets/font-awesome.zip">downloading</a> the latest version of Font Awesome, open up the <code>font-awesome/less</code> directory. Then, edit <code>variables.less</code> and change the <code>@FontAwesomePath</code> variable to:</p>
+<div class="highlight"><pre><code class="scss language-scss" data-lang="scss"><span class="k">@FontAwesomePath</span><span class="nd">:</span> <span class="s2">&quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/font&quot;</span><span class="o">;</span>
+</code></pre></div>
+<p>This gives you all the power to customize Font Awesome styles however you like and still get all the benefits and ease of using BootstrapCDN.</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="row">
+  <div class="span8 offset2 text-center">
+    <h3><a href="/articles">See All Articles<span><i class="icon-double-angle-right"></i></span></a></h3>
+  </div>
+</section>
+
+
+  </div>
+  <div class="push"><!-- necessary for sticky footer --></div>
+</div>
+
+<footer class="footer text-center">
+  <ul class="unstyled">
+    <li><a href="/">Home</a></li>
+    <li>&nbsp; &middot; &nbsp;<a href="/articles">Articles</a></li>
+    <li>&nbsp; &middot; &nbsp;<a href="http://twitter.com/kyruus">@kyruus</a></li>
+  </ul>
+</footer>
+
+<script src="http://platform.twitter.com/widgets.js"></script>
+<script src="/assets/js/jquery-1.9.1.min.js"></script>
+
+<script src="assets/js/bootstrap-2.3.2/bootstrap-transition.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-alert.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-modal.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-dropdown.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-scrollspy.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-tab.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-tooltip.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-popover.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-button.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-collapse.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-carousel.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-typeahead.js"></script>
+<script src="assets/js/bootstrap-2.3.2/bootstrap-affix.js"></script>
+
+
+</body>
+</html>
