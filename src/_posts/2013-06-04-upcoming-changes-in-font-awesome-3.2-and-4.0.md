@@ -7,8 +7,6 @@ author: davegandy
 
 Many changes are in the works for future versions of Font Awesome. Already well underway, version 3.2 adds a host of new brand icons and creates a better build process, while 4.0 will break backward compatibility to bring Font Awesome in line with best practices for icon fonts that have developed over the past year.
 
-abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnop
-
 ### Font Awesome 3.2
 
 Font Awesome 3.2 is primarily a date-driven release, as I'm trying to keep smaller and more regular updates the norm. The release date for 3.2 is expected on Wednesday, June 12, so watch for it!
