@@ -1,0 +1,120 @@
+---
+---
+
+// Path Overrides
+@FontAwesomePath:       "../font/font-awesome-{{ site.fontawesome.version }}";
+
+
+//
+// Site variables
+// --------------
+
+// Grays
+@black:                 #000;
+@grayDarker:            #24211f;
+@grayDark:              #363330;
+@gray:                  #585552;
+@grayLight:             #9c9996;
+@grayLighter:           #edeceb;
+@white:                 #fff;
+
+// Blues
+@blueDarker:            #003366;
+@blueDark:              #005f9b; // Kyruus Dark Blue - Pantone 3015 C
+@blue:                  #009add; // Kyruus Blue - Pantone 2925 C
+@blueLight:             #b8dcf2;
+@blueLighter:           #f0f9ff;
+
+// Greens
+@greenDarker:           #41683b;
+@greenDark:             #678943;
+@green:                 #95bf52;
+@greenLight:            #ddefbd;
+@greenLighter:          #f3f9e8;
+
+// Reds
+@redDarker:             #702222;
+@redDark:               #ba4a4a;
+@red:                   #dd7373;
+@redLight:              #f2adb1;
+@redLighter:            #fff0f0;
+
+// Yellows
+@yellowDarker:          #6f4215;
+@yellowDark:            #db8400;
+@yellow:                #f9e27d;
+@yellowLight:           #fff5bd;
+@yellowLighter:         #fffcee;
+
+// Oranges
+@orangeDarker:          #8c3900;
+@orangeDark:            #cc5d11;
+@orange:                #f4914e;
+@orangeLight:           #ffd0a6;
+@orangeLighter:         #fff4e6;
+
+// Purples
+@purpleDarker:          #4a226d;
+@purpleDark:            #7457ad;
+@purple:                #9780d6;
+@purpleLight:           #c3b8f4;
+@purpleLighter:         #fbf5ff;
+
+
+@text-muted:              #bbb;
+@bold-weight:             700;
+@XLFontSize:              @baseFontSize * 2; // ~28px
+@brand-primary:           mix(@blue, @blueDark, 50%);
+//@brand-primary:           #c5302f;
+@navbar-mix:              #fff;
+
+
+
+
+
+// Bootstrap overrides
+// -------------------
+
+// Scaffolding
+@textColor:             @gray;
+
+
+// Links
+@linkColor:             mix(@blue, @blueDark, 90%);
+@linkColorHover:        mix(@blue, @blueDark, 30%);
+
+
+// Typography
+@sansFontFamily:        proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@baseFontSize:          16px;
+@baseLineHeight:        23px;
+
+@headingsFontFamily:    proxima-nova-sc-osf-ext-cond, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@headingsFontWeight:    @bold-weight;
+
+
+// Wells
+@wellBackground:                  #f9f9f9;
+
+
+// Navbar
+@navbarCollapseWidth:             767px;
+@navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
+
+@navbarHeight:                    100px;
+@navbarBackgroundHighlight:       @brand-primary;
+@navbarBackground:                @brand-primary;
+@navbarBorder:                    #eee;
+
+@navbarText:                      mix(@brand-primary, @navbar-mix, 60%);
+@navbarLinkColor:                 mix(@brand-primary, @navbar-mix, 50%);
+@navbarLinkColorHover:            @navbar-mix;
+@navbarLinkColorActive:           @navbar-mix;
+
+@navbarBrandColor:                @navbarLinkColorHover;
+@navbarBrandColorHover:           mix(@brand-primary, @navbar-mix, 20%);
+
+
+// Grid
+@gridColumnWidth:         42px;

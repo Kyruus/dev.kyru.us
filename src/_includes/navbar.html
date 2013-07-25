@@ -1,0 +1,12 @@
+<div class="navbar navbar-static-top hidden-print">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="{{ site.baseurl }}"><i class="icon-code icon-large padding-right"></i>{{ site.title }}</a>
+      <ul class="nav pull-right hidden-phone">
+        <li><a href="{{ site.baseurl }}">Home</a></li>
+        {% if site.posts.size > 1 %}<li><a href="{{ site.baseurl }}articles">Articles</a></li>{% endif %}
+        <li><a href="http://twitter.com/{{ site.organization.twitter }}">@{{ site.organization.twitter }}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

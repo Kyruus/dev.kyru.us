@@ -1,0 +1,32 @@
+safe:             false
+port:             7990
+baseurl:          /  # Where GitHub serves the project up from
+url:              http://localhost:7990
+
+source:           src
+destination:      _gh_pages
+plugins:          src/_plugins
+
+permalink:        pretty
+paginate:         5
+timezone:         America/New_York
+markdown:         redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+
+title:            Kyruus Dev Blog
+organization:
+  name:           Kyruus
+  slug:           kyruus
+  twitter:        kyruus
+
+fontawesome:
+  version:        3.2.1
+bootstrap:
+  version:        2.3.2
+jquery:
+  version:        1.9.1
+google_analytics:
+  tracking_id:    UA-31344009-5
+typekit:
+  embed_code:     knb2ekr
