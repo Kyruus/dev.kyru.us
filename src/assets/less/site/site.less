@@ -2,23 +2,26 @@
 @import "../font-awesome-3.2.1/font-awesome";
 
 @import "variables";
+@import "fonts";
 @import "lazy";
 @import "sticky-footer";
 
 .navbar {
+  font-family: @sansFontFamily;
   .navbar-inner {
     .box-shadow(none);
     border-bottom-color: @navbarBorder;
   }
   .brand {
-    font-size: 30px;
-    padding-top: 28px;
-    padding-bottom: 32px;
+    font-family: @brandFontFamily;
+    font-size: 34px;
     font-weight: @bold-weight;
+    padding-top: 37px;
+    padding-bottom: 40px;
     max-width: none;
     &:hover { color: @navbarBrandColorHover; }
     .icon-large {
-      margin-right: .2em;
+      margin-right: .3em;
     }
   }
   .nav > li > a { font-weight: @bold-weight; }
@@ -52,18 +55,22 @@
 //  font-weight: 700;
 }
 .post {
-  text-align: justify;
-  hyphens: auto;
   font-size: @baseFontSize + 2;
   line-height: 1.6em;
   h1 {
 //    margin-bottom: .75em;
     margin-bottom: .35em;
     font-size: 50px;
-    line-height: .9em;
+    line-height: 1.0em;
     text-align: center;
   }
   p { margin-bottom: 1.25em; }
+}
+
+.post-body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 nav {
@@ -132,6 +139,7 @@ ul.posts {
 }
 
 footer {
+  font-family: @sansFontFamily;
   border-top: solid 1px @navbarBorder;
   background-color: @navbarBackground;
   color: @navbarText;
